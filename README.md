@@ -1,6 +1,6 @@
 # My-personal-portfolio
 My portfolio is completely based on my skills and certifications and contacts
---------------------------------------------------------------------------------------------------HTML---------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------HTML-------------------------------------------------------------------------
 Your HTML portfolio starts with the <!DOCTYPE html> declaration, which tells the browser to render the page using HTML5 standards. The <html lang="en"> element wraps your entire document and specifies that the content is in English. Inside the <head> section, you define metadata for the page such as the character set (UTF-8) and viewport settings, which are important for mobile responsiveness. You also set the page title, which appears in the browser tab.
 
 You link to an external CSS file called style.css to style your website and include a script.js file using the defer attribute to ensure the script runs only after the HTML content has fully loaded. You then include Bootstrap 4.5 via a CDN (Content Delivery Network), along with jQuery, Popper.js, and Bootstrap’s JavaScript, which enable interactive components like the navbar toggle on smaller screens.
@@ -14,7 +14,7 @@ The Certifications section lists your Salesforce Administrator certification and
 The Contact section includes a form with fields for the user's name, email, and message. It uses Bootstrap classes for styling. The “Send Message” button is set to call a JavaScript function named sendEmail()—you would need to define this function in your script.js file for the button to actually send an email.
 
 Finally, the footer at the bottom includes your name, the current year, and quick links to your GitHub, email (via a pre-filled Gmail link), and back to the contact section.
---------------------------------------------------------------------------------------------------CSS------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------CSS--------------------------------------------------------------------------------
 The body selector sets the default style for the whole webpage. It uses the Arial font (or sans-serif as a fallback), removes the default margin and padding around the edges, sets a comfortable line height for readability, applies a light gray background (#f4f4f4), and sets the default text color to a dark gray (#333).
 
 The header styles the top section of the page with a dark background (#333), white text, 20 pixels of padding, and centers the content using text-align: center.
@@ -46,7 +46,7 @@ The @media screen and (max-width: 768px) block defines a responsive design rule.
 The .card class adds a soft box shadow around cards for depth (box-shadow) and slightly rounded corners (border-radius: 12px), making them look like elevated cards.
 
 Lastly, the footer styles the bottom section of the page by centering the text, adding 10 pixels of padding, and using a dark background with white text—consistent with the header.
------------------------------------------------------------------------------------------------JAVASCRIPT------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------JAVASCRIPT----------------------------------------------------------------------------
 The script begins with window.addEventListener('load', function () {...});, which sets up a function to run only after the entire webpage (HTML, CSS, images, etc.) has fully loaded. This ensures that all elements are ready to be interacted with. Inside this function, console.log("Portfolio site loaded successfully!"); is used to print a message to the browser’s developer console. This is helpful for debugging, confirming that your site and scripts are loading correctly.
 
 Next is the definition of the sendEmail() function, which will be triggered when the user clicks the "Send Message" button in your contact form.
@@ -64,9 +64,9 @@ it.
 
 After sending, the .then() part is a promise that runs when the email has been successfully sent. If it works, it shows an alert saying "success!" followed by the status code from the response (response.status), which can help confirm delivery.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                    OVERALL HTML,CSS,BOOSTRAP,JAVASCRIPT | HOW IT WORKS
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         OVERALL HTML,CSS,BOOSTRAP,JAVASCRIPT | HOW IT WORKS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Your portfolio project demonstrates a strong foundation in front-end development by combining HTML, CSS, Bootstrap, and JavaScript effectively. You’ve structured the HTML semantically, dividing content into logical sections like Profile, Skills, Certifications, and Contact. Bootstrap's classes like navbar, card, m-4, p-4, and text-center have been properly used to enhance layout and responsiveness without writing excessive custom CSS. Your custom style.css file complements Bootstrap by setting up a clean color scheme, text alignment, spacing, and layout enhancements, including shadows, radius, and media queries for mobile devices. The contact-section is styled to center the form using Flexbox, which is a good practice for modern responsive design.
 
 In the JavaScript, you correctly listen for the page load event and use the sendEmail() function to collect user input and send it using the EmailJS API. You organized the object clearly (from_name, email_id, message) and used a .then() promise to notify users of success. This shows you're comfortable with asynchronous operations and client-side form handling.
